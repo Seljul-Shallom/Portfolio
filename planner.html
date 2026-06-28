@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner | Seljul Shallom Kamven</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">SSK<span>.</span></div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html" class="active">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <div class="page-hero">
+    <h1>Academic Planner</h1>
+    <p>Add tasks, mark them as done, and delete them when finished</p>
+  </div>
+
+  <!-- PLANNER SECTION -->
+  <section class="section">
+    <span class="label">Task Manager</span>
+    <h2>My Tasks</h2>
+
+    <div class="planner-box">
+
+      <!-- INPUT ROW: text box + add button -->
+      <div class="task-input-row">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Enter a new task, e.g. Study for Statistics exam..."
+        />
+        <button class="btn" onclick="addTask()">Add Task</button>
+      </div>
+
+      <!-- Task counter display -->
+      <p id="taskCounter" style="color: #800020; font-weight: 600; margin-bottom: 15px; font-size: 14px;">
+        0 task(s) — 0 completed
+      </p>
+
+      <!-- The list where tasks will appear -->
+      <!-- JavaScript fills this in dynamically -->
+      <div id="taskList">
+        <p class="no-tasks">No tasks yet. Add one above to get started!</p>
+      </div>
+
+    </div>
+
+    <!-- HOW TO USE (ordered list — required HTML element) -->
+    <div style="margin-top: 40px;">
+      <h3 style="margin-bottom: 12px; color: #1a1a2e;">How to Use the Planner</h3>
+      <ol style="padding-left: 22px; display: flex; flex-direction: column; gap: 10px; color: #555;">
+        <li>Type your task in the text box above</li>
+        <li>Click <strong>Add Task</strong> to add it to your list</li>
+        <li>Tick the checkbox to mark a task as completed</li>
+        <li>Click <strong>Delete</strong> to remove a task from the list</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-name">Seljul Shallom Kamven</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="planner.html">Planner</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p>&copy; 2026 Seljul Shallom Kamven. All rights reserved.</p>
+  </footer>
+
+  <!-- Planner JavaScript -->
+  <script src="js/planner.js"></script>
+
+</body>
+</html>
